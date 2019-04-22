@@ -20,6 +20,7 @@ public class buttonGround : MonoBehaviour {
 			alpha = 1;
 		} else {
 			gameObject.GetComponent<BoxCollider> ().isTrigger = true;
+			//make transparent
 			alpha = 0.2f;
 		}
 	}
