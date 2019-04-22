@@ -27,10 +27,10 @@ public class audioSyncer : MonoBehaviour {
 
 	public virtual void OnUpdate(){
 		m_previousAudioValue = m_audioValue;
-		m_audioValue = audioSpectrum.spectrumValue;
-
+		m_audioValue = audioSpectrum.spectrumValue;\
 		if(m_previousAudioValue > bias && m_audioValue <=bias){
 			if(m_timer > timeStep)
+				// calls OneBeat function
 				OnBeat();
 		}
 	}
